@@ -17,5 +17,6 @@ RUN npm run build
 
 # Specify a base image
 FROM nginx
-
+#only understood by the elastic beanstalk not on local
+EXPOSE 80 
 COPY --from=builder /app/build /usr/share/nginx/html
