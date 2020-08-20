@@ -8,7 +8,7 @@ WORKDIR /app
 # Install some depenendencies
 COPY ./package.json ./
 RUN npm install
-COPY . .
+COPY ./ ./
 
 # Default command
 RUN npm run build
